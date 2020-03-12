@@ -1,0 +1,78 @@
+.flexItem {
+  padding: 100px;
+  background-color: rgb(145, 121, 172);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 35px;
+}
+
+.content {
+  color: white;
+  font-size: 15px;
+  padding-top: 1rem;
+}
+
+h1,
+h3 {
+  color: rgb(176, 92, 176);
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+* {
+  font-family: "Zilla Slab", serif;
+}
+
+ul {
+  list-style-type: square;
+  font-size: 20px;
+}
+
+.topnav {
+  background-color: rgb(132, 189, 169);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(83, 116, 104);
+  color: white;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.image img {
+  margin: 1rem;
+}
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgb(145, 121, 172);
+}
+footer {
+  display: flex;
+  color: white;
+}
