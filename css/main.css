@@ -1,12 +1,59 @@
 .flexItem {
-  padding: 100px;
+  padding: 5rem;
   background-color: rgb(145, 121, 172);
 }
 .title {
   display: flex;
+  align-items: center;
   justify-content: center;
   color: white;
   font-size: 35px;
+  border: 2px solid red;
+}
+
+h2.question {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+  font-weight: 600;
+}
+
+main.question-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-box {
+  height: 20rem;
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  border: 4px solid purple;
+}
+
+.title img {
+  height: 15%;
+  width: 15%;
+}
+
+.instructions {
+  border: 3px solid pink;
+  padding-left: 5rem;
+}
+
+.instructions li {
+  padding-bottom: 1rem;
+}
+
+.instructions-button {
+  border: 3px solid green;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.instructions-button button {
+  border: 3px solid yellow;
 }
 
 .content {
@@ -19,7 +66,6 @@ h1,
 h3 {
   color: rgb(176, 92, 176);
   font-weight: bolder;
-  text-decoration: underline;
   font-size: 30px;
 }
 
