@@ -293,3 +293,48 @@ body.wrong {
   height: 15rem;
   background: rgb(249, 187, 95);
 }
+
+.testbox {
+  display: flex;
+  background: rgb(233, 164, 237);
+  height: 20rem;
+}
+
+/*.item1 {
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid red;
+  height: 10rem;
+  width: 9rem;
+  padding: 2rem;
+}
+
+.item1 h2 {
+  font-size: 100%;
+}
+
+.item1 h4 {
+  font-size: 80%;
+  width: fit-content;
+}
+
+.item1 ul {
+  width: fit-content;
+  font-size: 80%;
+  width: 100%;
+}
+
+.item2 {
+  border: 1px solid red;
+  height: 10rem;
+  width: 9rem;
+  padding: 2rem;
+}
+
+.item3 {
+  border: 1px solid red;
+  height: 10rem;
+  width: 9rem;
+  padding: 2rem;
+}
+*/
