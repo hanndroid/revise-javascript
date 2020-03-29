@@ -1,6 +1,14 @@
 .flexItem {
   padding: 2rem;
+  justify-content: center;
   background-color: rgb(145, 121, 172);
+}
+
+.h2-instruction {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
 }
 
 .title {
@@ -12,7 +20,7 @@
   font-size: 35px;
 }
 
-.main {
+main {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,25 +28,44 @@
   margin: 20px;
 }
 
-.homepage-link-one {
-  margin: 20px;
+.hover-tint {
+  height: 100%;
+  width: 15rem;
+  height: 15rem;
+  position: relative;
 }
 
-.homepage-link-two {
-  margin: 20px;
+.hover-tint:hover {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s linear;
+  background: rgb(71, 60, 83);
 }
 
-.homepage-link-three {
-  margin: 20px;
-}
-
-.h2-instruction {
+.hover-tint a {
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 15px;
+  height: 100%;
 }
+
+.hover-tint a img {
+  max-width: 50%;
+  height: auto;
+}
+/* 
+.hover-tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 255, 255, 0.5);
+  transition: 0.3s linear;
+} */
 
 h2.question {
   color: white;
@@ -91,10 +118,6 @@ main.question-container {
   position: relative;
   list-style-type: none;
   text-align: center;
-}
-
-a:hover {
-  background-color: rgb(100, 165, 140);
 }
 
 .instructions {
