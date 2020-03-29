@@ -5,10 +5,31 @@
 
 .title {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 35px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.homepage-link-one {
+  margin: 20px;
+}
+
+.homepage-link-two {
+  margin: 20px;
+}
+
+.homepage-link-three {
+  margin: 20px;
 }
 
 .h2-instruction {
@@ -242,62 +263,46 @@ body.wrong {
   display: none;
 }
 
-.flexItem-fun-links {
-  padding: 2rem;
-  background-color: rgb(145, 121, 172);
-  height: 15rem;
-}
-
-.title-fun-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 35px;
-}
-
-.content-fun-links {
-  display: flex;
-  align-content: center;
-  color: white;
-  font-size: 15px;
-  padding-top: 1rem;
-}
-
 .laugh {
+  color: white;
   padding: 1rem;
   height: 15rem;
   background: rgb(250, 239, 113);
 }
 
 .meetups {
+  color: white;
   padding: 1rem;
   height: 15rem;
   background: rgb(254, 178, 190);
 }
 
 .be-inspired {
+  color: white;
   padding: 1rem;
   height: 15rem;
   background: rgb(151, 151, 255);
 }
 
 .learn {
+  color: white;
   padding: 1rem;
   height: 15rem;
   background: rgb(126, 233, 169);
 }
 
 .work {
+  color: white;
   padding: 1rem;
   height: 15rem;
   background: rgb(249, 187, 95);
 }
 
 .testbox {
+  color: white;
   display: flex;
   background: rgb(233, 164, 237);
-  height: 20rem;
+  height: 15rem;
 }
 
 /*.item1 {
