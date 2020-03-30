@@ -1,7 +1,11 @@
+* {
+  font-family: "Zilla Slab", serif;
+}
+
 .flexItem {
-  padding: 2rem;
+  padding: 3rem;
   justify-content: center;
-  background-color: rgb(145, 121, 172);
+  background: rgb(189, 165, 210);
 }
 
 .h2-instruction {
@@ -9,6 +13,16 @@
   justify-content: center;
   color: white;
   font-size: 15px;
+}
+
+.title-women {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 55px;
+  font-family: "Marck Script", cursive, serif;
 }
 
 .title {
@@ -54,18 +68,6 @@ main {
   max-width: 50%;
   height: auto;
 }
-/* 
-.hover-tint:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 255, 255, 0.5);
-  transition: 0.3s linear;
-} */
 
 h2.question {
   color: white;
@@ -107,49 +109,21 @@ main.question-container {
   width: 15%;
 }
 
-.flip-link {
-  background-color: rgb(148, 127, 162);
-  color: white;
-  border-radius: 0.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  position: relative;
-  list-style-type: none;
-  text-align: center;
-}
-
-.instructions {
-  padding-left: 5rem;
-}
-
-.instructions li {
-  padding-bottom: 1rem;
-}
-
-.instructions-button {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .content {
   display: flex;
-  align-content: center;
+  justify-content: center;
   color: white;
   font-size: 15px;
   padding-top: 1rem;
 }
 
-h1,
-h3 {
-  color: rgb(176, 92, 176);
-  font-weight: bolder;
-  font-size: 30px;
-}
-
-* {
-  font-family: "Zilla Slab", serif;
+.content-test {
+  margin-top: -1rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  padding-top: 1rem;
 }
 
 ul {
@@ -158,7 +132,7 @@ ul {
 }
 
 .topnav {
-  background-color: rgb(132, 189, 169);
+  background: rgb(71, 60, 83);
   overflow: hidden;
 }
 
@@ -194,8 +168,8 @@ ul {
 .footerContainer {
   display: flex;
   justify-content: center;
-  padding: 50px;
-  background-color: rgb(145, 121, 172);
+  padding: 15px;
+  background: rgb(71, 60, 83);
 }
 footer {
   display: flex;
@@ -328,41 +302,47 @@ body.wrong {
   height: 15rem;
 }
 
-/*.item1 {
-  display: inline-block;
-  width: fit-content;
-  border: 1px solid red;
-  height: 10rem;
-  width: 9rem;
-  padding: 2rem;
+main {
+  justify-content: center;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
-.item1 h2 {
-  font-size: 100%;
+.blog-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(200, 169, 205);
+  color: white;
+  height: 15rem;
+  width: 15rem;
 }
 
-.item1 h4 {
-  font-size: 80%;
-  width: fit-content;
+a.blog-preview {
+  text-decoration: none;
 }
 
-.item1 ul {
-  width: fit-content;
-  font-size: 80%;
-  width: 100%;
+a.blog-preview:hover {
+  text-decoration: underline;
+  background: rgb(71, 60, 83);
 }
 
-.item2 {
-  border: 1px solid red;
-  height: 10rem;
-  width: 9rem;
-  padding: 2rem;
+@media (min-width: 320px) {
+  main {
+    grid-template-columns: repeat(1, 0fr);
+  }
 }
 
-.item3 {
-  border: 1px solid red;
-  height: 10rem;
-  width: 9rem;
-  padding: 2rem;
+@media (min-width: 600px) {
+  main {
+    grid-template-columns: repeat(2, 0fr);
+  }
 }
-*/
+
+@media (min-width: 901px) {
+  main {
+    grid-template-columns: repeat(3, 0fr);
+  }
+}
