@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/quiz.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap"
       rel="stylesheet"  
@@ -12,38 +12,34 @@
     <title>Test</title>
   </head>
   <body>
-    <div class="topnav">
+     <nav> 
       <a href="index.html">Home</a>
-      <a href="test.html">Test</a>
-      <a href="complete-code.html">Complete the code</a>
-      <a href="#pomodoro">Pomodoro</a>
-      <a href="funlinks.html">Fun links</a>
-    </div>
-    <div class="flexItem">
+      <a href="test.html">Quiz</a>
+      <a href="funlinks.html">Community</a>
+    </nav>
+    <div class="flex-item">
       <h1 class="title">
-        <img src="../media/JS-logo.png" alt="js logo" />
-        Multiple choice test
+        Quiz about web development
       </h1>
+      <p class="site-description">
+        Press 'Start' button below when ready. There's only 1 correct answer per question.
+      </p>
     </div>
-
-    <main>
-      <div class="container">
-        <div id="question-container" class="hide">
-          <div id="question">Question</div>
-          <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
-          </div>
+    <main class="content">
+      <div id='score'>score: 0</div>
+      <div id="question-container" class="container hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
         </div>
-        <div class="controls">
-          <button id="start-btn" class="start-btn btn">Start</button>
-          <button id="next-btn" class="next-btn btn hide">Next</button>
-        </button>
       </div>
-  
-
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+      </div>
     </main>
     <div class="footerContainer">
       <footer>

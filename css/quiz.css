@@ -1,0 +1,149 @@
+@import "main.css";
+
+main.content {
+  flex-direction: column;
+}
+
+#question-container {
+  color: rgb(71, 60, 83);
+}
+
+ul {
+  list-style-type: square;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: rgb(71, 60, 83);
+  color: white;
+}
+
+/* MULTIPLE CHOICE TEST */
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+#quiz-container {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+  height: 20rem;
+  min-width: 50%;
+  min-height: fit-content;
+  justify-content: center;
+  border: 1rem solid rgb(189, 165, 210);
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+  height: 3rem;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: none;
+  background-color: hsl(var(--hue), 100%, 60%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  border-color: rgb(245, 237, 6);
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+  height: 3rem;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+  height: 3rem;
+}
+
+.start-btn,
+.next-btn {
+  font-size: 2rem;
+  width: 10rem;
+  background: rgb(189, 165, 210);
+  text-align: center;
+  padding: 2rem;
+  line-height: 0rem;
+  margin-top: -1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+#score {
+  color: #473c53;
+}
+
+/* Media Queries */
+
+@media (min-width: 320px) {
+  main.grid {
+    grid-template-columns: repeat(1, 0fr);
+  }
+}
+
+@media (min-width: 600px) {
+  main.grid {
+    grid-template-columns: repeat(2, 0fr);
+  }
+}
+
+@media (min-width: 901px) {
+  main.grid {
+    grid-template-columns: repeat(3, 0fr);
+  }
+}
