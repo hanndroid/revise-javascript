@@ -6,6 +6,7 @@ main.content {
 
 #question-container {
   color: rgb(71, 60, 83);
+  background: rgba(223, 191, 223, 0.495);
 }
 
 ul {
@@ -59,7 +60,7 @@ body.wrong {
   min-width: 50%;
   min-height: fit-content;
   justify-content: center;
-  border: 1rem solid rgb(189, 165, 210);
+  border: 1rem solid rgb(71, 60, 83);
   background-color: white;
   border-radius: 5px;
   padding: 10px;
@@ -108,7 +109,7 @@ button:hover {
 .next-btn {
   font-size: 2rem;
   width: 10rem;
-  background: rgb(189, 165, 210);
+  background: rgb(71, 60, 83);
   text-align: center;
   padding: 2rem;
   line-height: 0rem;

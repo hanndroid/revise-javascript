@@ -8,6 +8,41 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
+  background-image: url("../media/coding-bg.jpg");
+}
+
+.intro {
+  display: inline-block;
+  justify-content: center;
+  color: white;
+  width: 60%;
+}
+
+.be-inspired-nav,
+.be-inspired-footer {
+  background: rgb(189, 165, 210);
+}
+
+.be-inspired-content,
+.subheading {
+  color: white;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 5rem;
+}
+
+.be-inspired-names {
+  padding-left: 5rem;
+  color: rgb(255, 227, 239);
+}
+
+.dots {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.subheading {
+  margin-top: 2rem;
 }
 
 .flex-item {
@@ -16,21 +51,12 @@ body {
   text-align: center;
 }
 
-.title-women {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 55px;
-  font-family: "Marck Script", cursive, serif;
-}
-
 .title {
   padding: 1rem;
   margin: 0;
   color: white;
   font-size: 35px;
+  margin-top: 1rem;
 }
 
 .site-description {
@@ -39,17 +65,17 @@ body {
 }
 
 main.content {
+  background-image: url("../media/coding-bg.jpg");
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 20px;
 }
 
 main.grid {
+  margin-top: 2rem;
   justify-content: center;
   display: grid;
-  grid-gap: 1rem;
   grid-template-columns: repeat(3, 0fr);
   grid-template-rows: repeat(3, 1fr);
 }
@@ -144,6 +170,7 @@ nav a:hover {
 
 ul {
   background: white;
+  padding-left: 10rem;
 }
 
 .laugh {
@@ -181,20 +208,13 @@ ul {
   background: rgb(249, 187, 95);
 }
 
-/*.testbox {
-  color: white;
-  display: flex;
-  background: rgb(233, 164, 237);
-  height: 15rem;
-}*/
-
 .blog-preview {
   margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-self: center;
-  background-color: rgb(200, 169, 205);
+  background: rgb(141, 119, 162);
   color: white;
   height: 15rem;
   width: 15rem;
@@ -207,6 +227,123 @@ a.blog-preview {
 a.blog-preview:hover {
   text-decoration: underline;
   background: rgb(71, 60, 83);
+}
+
+.be-inspired-main {
+  background: rgb(71, 60, 83);
+}
+
+.be-inspired-flex-item {
+  background: rgb(71, 60, 83);
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/*Slideshow */
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 30rem;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.523);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#koala-404 {
+  width: 100%;
+  height: 100%;
 }
 
 /* Footer */
