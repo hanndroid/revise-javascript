@@ -1,2 +1,1 @@
-# revise-javascript
-A website using different techniques to help the user revise Javascript + Resources Blog
+Web develpment learning activities + community resources blog
