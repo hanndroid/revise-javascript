@@ -31,8 +31,53 @@
           have completed 4 'Pomodoro's', you can take a longer break.
         </p>
         <h2>Start your countdown!</h2>
-        <p>25:00</p>
-        <button>start</button><button>pause</button><button>stop</button>
+
+        <div id="CountdownTimer">
+          <p id="safeTimerDisplay"></p>
+        </div>
+        <button onclick="start">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="stop()">Stop</button>
+
+        <script>
+          let myVar = setInterval(function () {
+            myTimer();
+          }, 1000);
+          let minuteLimit = 24;
+          let secondLimit = 60;
+
+          function myTimer() {
+            if (secondLimit === 0 && minuteLimit === 0) {
+              myStopFunction();
+            }
+
+            document.getElementById("safeTimerDisplay").innerHTML =
+              zeroPad(minuteLimit, 2) + ":" + zeroPad(secondLimit, 2);
+
+            if (secondLimit === 0) {
+              minuteLimit = minuteLimit - 1;
+              secondLimit = 60;
+            }
+
+            secondLimit = secondLimit - 1;
+          }
+
+          function myStopFunction() {
+            clearInterval(myVar);
+          }
+
+          function zeroPad(num, places) {
+            let result;
+            if (num === 60) {
+              result = "00";
+            } else {
+              let zero = places - num.toString().length + 1;
+              result = Array(+(zero > 0 && zero)).join("0") + num;
+            }
+            return result;
+          }
+        </script>
+
         <p class="pomodoro-des">
           Fun Fact: The name Pomodoro comes from the Italian word for Tomato.
           Francesco Cirillo, who developed the method, used a Tomato shaped
