@@ -35,16 +35,19 @@
         <div id="CountdownTimer">
           <p id="safeTimerDisplay"></p>
         </div>
-        <button onclick="start">Start</button>
-        <button onclick="pause()">Pause</button>
-        <button onclick="stop()">Stop</button>
+        <button onclick="myCountdown()">Start</button>
+        <button onclick="reset()">Stop &amp; Reset</button>
 
         <script>
-          let myVar = setInterval(function () {
-            myTimer();
-          }, 1000);
-          let minuteLimit = 24;
+          let minuteLimit = 25;
           let secondLimit = 60;
+          let timer;
+
+          function myCountdown() {
+            timer = setInterval(function () {
+              myTimer();
+            }, 1000);
+          }
 
           function myTimer() {
             if (secondLimit === 0 && minuteLimit === 0) {
@@ -52,8 +55,13 @@
             }
 
             document.getElementById("safeTimerDisplay").innerHTML =
-              zeroPad(minuteLimit, 2) + ":" + zeroPad(secondLimit, 2);
+              zeroPad(minuteLimit, "minutes") +
+              ":" +
+              zeroPad(secondLimit, "seconds");
 
+            if (minuteLimit === 25) {
+              minuteLimit = minuteLimit - 1;
+            }
             if (secondLimit === 0) {
               minuteLimit = minuteLimit - 1;
               secondLimit = 60;
@@ -62,16 +70,22 @@
             secondLimit = secondLimit - 1;
           }
 
-          function myStopFunction() {
-            clearInterval(myVar);
+          function reset() {
+            minuteLimit = 25;
+            secondLimit = 60;
+            document.getElementById("safeTimerDisplay").innerHTML =
+              zeroPad(minuteLimit, "minutes") +
+              ":" +
+              zeroPad(secondLimit, "seconds");
+            clearInterval(timer);
           }
 
-          function zeroPad(num, places) {
+          function zeroPad(num, type) {
             let result;
             if (num === 60) {
               result = "00";
             } else {
-              let zero = places - num.toString().length + 1;
+              let zero = 2 - num.toString().length + 1;
               result = Array(+(zero > 0 && zero)).join("0") + num;
             }
             return result;
