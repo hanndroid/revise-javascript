@@ -323,6 +323,12 @@ a.blog-preview:hover {
   animation-duration: 1.5s;
 }
 
+.pomodoro-container {
+  margin-top: 5rem;
+  padding: 3rem;
+  background: rgb(228, 225, 117);
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;

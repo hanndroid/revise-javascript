@@ -60,10 +60,9 @@ body.wrong {
   min-width: 50%;
   min-height: fit-content;
   justify-content: center;
-  border: 1rem solid rgb(71, 60, 83);
   background-color: white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
 }
 
 button:hover {
@@ -98,6 +97,10 @@ button:hover {
   --hue: var(--hue-correct);
   color: black;
   height: 3rem;
+}
+
+#question {
+  font-size: 1.5rem;
 }
 
 .btn.wrong {
